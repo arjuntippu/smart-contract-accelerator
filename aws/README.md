@@ -1,35 +1,25 @@
 # Deploy OFS SmartContract Accelarator in AWS with one click
 
-
-
-
-
-
-
-![aws deployment](https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg)  
-
-
-
-
-
+## Pre-requisite for the AWS deployment
+- Active AWS account .  
+    - Link to create account - <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/">Click here</a> 
+- Key pair if you want to SSH to EC2 Instance . 
+    - Link to create Key pair - <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html"> Click here</a>
+    
+## One click deployment AWS Buttons
 
 | Buttons    | Descripition | Playbook link | 
 | ------------- | ------------- |------------- |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCBOneClickDeployment&amp;templateURL=https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2  | Click here |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCBOneClickDeployment&amp;templateURL=https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2  | Click here |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCBOneClickDeployment&amp;templateURL=https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2  | <a href=""> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCBOneClickDeployment&amp;templateURL=https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2  | <a href=""> Click here</a> |
 
 
+## How the application looks in AWS?
+
+<img src="https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg" width="750" height="750" />
 
 
-
-
-
-# FAQ's . 
-- Do I need to have AWS account?  
-Yes, you need to have an active AWS account to run the smartcontract accelerator application.  
-  
-- How to create a new AWS account?  
-Please follow the steps listed in the link https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/  
+## FAQ's . 
   
 - What AWS services are used in the application?  
 Cloudformation, EC2 and Security group. It uses the default VPC to create the EC2 Instance . 
@@ -45,5 +35,6 @@ Steps to delete the cloudformation stack - https://docs.aws.amazon.com/AWSCloudF
 ## Licence . 
 
 See [LICENSE](LICENSE) 
+
 
 
