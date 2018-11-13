@@ -24,7 +24,7 @@ Steps to deploy smart contract accelerator
    
     <b>"Admin Username / Admin Password" </b> - Credentials to access virtual machine.
     
-    "Dns Name for Public IP" - Unique name to access the admin panel 
+    <b> "Dns Name for Public IP" </b> - Unique name to access the admin panel 
     (ex http://testbcnw.eastus.cloudapp.azure.com:8090/login) 
 
     ![Setup](./images/setup.png)
@@ -33,6 +33,8 @@ Steps to deploy smart contract accelerator
     a. Microsoft.Network
     b. Microsoft.Compute
 
+    ![Preview](./images/preview.png)
+
 4. The following componenets will be deployed on azure and link will be provided to access the azure portal. This step will take 5 to 8 minutes to complete.
     a. Updating Microsoft.Network/publicIPAddresses
     b. Updating Microsoft.Network/virtualNetworks
@@ -40,9 +42,13 @@ Steps to deploy smart contract accelerator
     d. Updating Microsoft.Compute/virtualMachines
     e. Updating Microsoft.Compute/virtualMachines/extensions 
 
+    ![Deploy](./images/deploy.png)
+
 5. Click "manage" link to access deployed resources from azure portal.
 
 6. In azure portal, under "Settings", select "Deployments" then select the name under the column header "DEPLOYMENT NAME". This will open deployment overview screen.
+
+    ![Deployments](./images/deployments.png)
 
 7. In deployment overview screen, select "Output" and copy the URL from "ApplicationURL" field. Paste the URL on browser address bar to access admin panel.
 
