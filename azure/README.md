@@ -19,7 +19,7 @@ Steps to deploy smart contract accelerator
     <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Frarunms%2Fautodeploy%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/> </a>
 
-2. Provide values for the following highligted mandatory fields and press "Next" to proceed further.
+2. Provide values for the following highligted mandatory fields and press <b>"Next"</b> to proceed further.
    
     <b>"Admin Username / Admin Password" </b> - Credentials to access virtual machine.
     
