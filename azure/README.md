@@ -14,6 +14,12 @@ Steps to deploy smart contract accelerator
 
     [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/) 
 
+    Use the below link to visualize the azure components
+
+    <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Frarunms%2Fautodeploy%2Fmaster%2Fazuredeploy.json" target="_blank">
+    <img src="http://armviz.io/visualizebutton.png"/>
+    </a>
+
 2. Provide values for the following highligted mandatory fields and press "Next" to proceed further.
    
     "Admin Username / Admin Password" - Credentials to access virtual machine.
