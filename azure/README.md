@@ -27,6 +27,8 @@ Steps to deploy smart contract accelerator
     "Dns Name for Public IP" - Unique name to access the admin panel 
     (ex http://testbcnw.eastus.cloudapp.azure.com:8090/login) 
 
+    ![Setup](/images/setup.png)
+
 3. "Preview" screen will show the list of azure resources will be created during the deployment. For this accelerator the following resources will be created. Press "Deploy" to start the deployment process.
     a. Microsoft.Network
     b. Microsoft.Compute
