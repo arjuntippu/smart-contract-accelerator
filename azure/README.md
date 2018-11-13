@@ -24,7 +24,7 @@ Steps to deploy smart contract accelerator
     <b>"Admin Username / Admin Password" </b> - Credentials to access virtual machine.
     
     <b> "Dns Name for Public IP" </b> - Unique name to access the admin panel 
-    (ex http://testbcnw.eastus.cloudapp.azure.com:8090/login) 
+    (ex http://<b>testbcnw</b>.eastus.cloudapp.azure.com:8090/login) 
 
     ![Setup](./images/setup.png)
 
