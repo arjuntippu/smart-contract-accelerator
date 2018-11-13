@@ -1,14 +1,14 @@
 # To deploy on Azure
 
 Prerequisites
-=============
+-------------
 Azure cloud account is mandatory to deploy this smart contract accelerator. Refer the below link to create an azure account 
 
 https://azure.microsoft.com/en-us/free/
 
 
 Steps to deploy smart contract accelerator
-==========================================
+------------------------------------------
 
 1. Click the below button, it will open "Deploy to Azure" screen to initiate the deployment
 
