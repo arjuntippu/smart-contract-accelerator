@@ -49,7 +49,7 @@ Steps to deploy smart contract accelerator
 
     ![Deployments](./images/deployments.png)
 
-7. In deployment overview screen, select <b>"Outputs"</b> and copy the URL from <b>"ApplicationURL"</b> field. Paste the URL on browser address bar to access admin panel.
+7. In deployment overview screen, select <b>"Outputs"</b> and copy the URL from <b>"APPLICATIONURL"</b> field. Paste the URL on browser address bar to access admin panel.
 
     ![Application URL](./images/url.png)
 
