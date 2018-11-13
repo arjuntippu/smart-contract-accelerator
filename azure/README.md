@@ -14,11 +14,10 @@ Steps to deploy smart contract accelerator
 
     [![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/) 
 
-    Use the below link to visualize the azure components
+    Click the below link to visualize the azure components
 
     <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Frarunms%2Fautodeploy%2Fmaster%2Fazuredeploy.json" target="_blank">
-    <img src="http://armviz.io/visualizebutton.png"/>
-    </a>
+    <img src="http://armviz.io/visualizebutton.png"/> </a>
 
 2. Provide values for the following highligted mandatory fields and press "Next" to proceed further.
    
@@ -30,17 +29,17 @@ Steps to deploy smart contract accelerator
     ![Setup](./images/setup.png)
 
 3. "Preview" screen will show the list of azure resources will be created during the deployment. For this accelerator the following resources will be created. Press "Deploy" to start the deployment process.
-    a. Microsoft.Network
-    b. Microsoft.Compute
+    * a. Microsoft.Network
+    * b. Microsoft.Compute
 
     ![Preview](./images/preview.png)
 
 4. The following componenets will be deployed on azure and link will be provided to access the azure portal. This step will take 5 to 8 minutes to complete.
-    a. Updating Microsoft.Network/publicIPAddresses
-    b. Updating Microsoft.Network/virtualNetworks
-    c. Updating Microsoft.Network/networkInterfaces
-    d. Updating Microsoft.Compute/virtualMachines
-    e. Updating Microsoft.Compute/virtualMachines/extensions 
+    * a. Updating Microsoft.Network/publicIPAddresses
+    * b. Updating Microsoft.Network/virtualNetworks
+    * c. Updating Microsoft.Network/networkInterfaces
+    * d. Updating Microsoft.Compute/virtualMachines
+    * e. Updating Microsoft.Compute/virtualMachines/extensions 
 
     ![Deploy](./images/deploy.png)
 
