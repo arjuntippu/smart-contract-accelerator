@@ -28,13 +28,13 @@ Steps to deploy smart contract accelerator
 
     ![Setup](./images/setup.png)
 
-3. "Preview" screen will show the list of azure resources will be created during the deployment. For this accelerator the following resources will be created. Press "Deploy" to start the deployment process.
+3. "Preview" screen will show the list of azure resources will be created during the deployment. For this accelerator the following resources will be created. Press <b>"Deploy"</b> to start the deployment process.
     * Microsoft.Network
     * Microsoft.Compute
 
     ![Preview](./images/preview.png)
 
-4. The following componenets will be deployed on azure and link will be provided to access the azure portal. This step will take 5 to 8 minutes to complete.
+4. The following componenets will be deployed on azure. After successful deployment, link will be provided to access the azure portal. Deployment will take 5 to 8 minutes to complete.
     * Updating Microsoft.Network/publicIPAddresses
     * Updating Microsoft.Network/virtualNetworks
     * Updating Microsoft.Network/networkInterfaces
@@ -43,9 +43,9 @@ Steps to deploy smart contract accelerator
 
     ![Deploy](./images/deploy.png)
 
-5. Click "manage" link to access deployed resources from azure portal.
+5. Click <b>"Manage"</b> link to access deployed resources from azure portal.
 
-6. In azure portal, under "Settings", select "Deployments" then select the name under the column header "DEPLOYMENT NAME". This will open deployment overview screen.
+6. In azure portal, under <b>"Settings"</b>, select <b>"Deployments"</b> then select the name under the column header <b>"DEPLOYMENT NAME"</b>. This will open deployment overview screen.
 
     ![Deployments](./images/deployments.png)
 
