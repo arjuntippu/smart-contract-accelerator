@@ -16,7 +16,7 @@
 
 ## How the application looks in AWS?
 
-<img src="https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg" width="750" height="750" />
+<img src="https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg" width="750" height="450" />
 
 
 ## FAQ's . 
