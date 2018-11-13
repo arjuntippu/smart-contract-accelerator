@@ -2,7 +2,7 @@
 
 Prerequisites
 =============
-Azure cloud account is mandatory to deploy this smart contract accelerator. Following the below link to create an azure account 
+Azure cloud account is mandatory to deploy this smart contract accelerator. Refer the below link to create an azure account 
 
 https://azure.microsoft.com/en-us/free/
 
