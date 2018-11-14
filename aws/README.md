@@ -1,6 +1,6 @@
-# Deploy OFS SmartContract Accelarator in AWS with one click
+# Jumpstart your Blockchain Adoption in AWS with OFS SmartContract Accelarator
 
-ObjectFrontier Smart Contract Accelerator is a click button Blockchain solution that installs a private Ethereum blockchain instance in your AWS environment. It comes pre-packeged with an Admin DApp that you can use to:
+ObjectFrontier (OFS) Smart Contract Accelerator is a click button Blockchain solution that installs a private Ethereum blockchain instance in your AWS environment. It comes pre-packeged with an Admin DApp that you can use to:
 
 - Configure your private network
 - Compile and deploy solidity-based smart contracts
