@@ -1,5 +1,15 @@
 # Deploy OFS SmartContract Accelarator in AWS with one click
 
+ObjectFrontier Smart Contract Accelerator is a click button Blockchain solution that installs a private Ethereum blockchain instance in your AWS environment. It comes pre-packeged with an Admin DApp that you can use to:
+
+- Configure your private network
+- Compile and deploy solidity-based smart contracts
+- Create new application experiences
+- View each block in the chain
+- OFS Blockchain provisions a default master account and preloads private tokens to get you started with developing your blockchain applications and smart contracts.
+
+After you intall. Launch the app, login to admin interface using the creds admin/admin.
+
 ## Pre-requisite for the AWS deployment
 - Active AWS account .  
     - Link to create account - <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/" target="_blank">Click here</a> 
