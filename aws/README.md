@@ -15,10 +15,18 @@
 
 
 
-## How the application looks in AWS?
+## What is setup behind the scenes for you?
+
+Note that a default VPC and Subnet is established for you. The Blockchain and the Admin App run in the EC2 instance set up for you.
 
 <img src="https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg" width="750" height="450" />
 
+## Pricing
+
+The accelerator is free of cost. 
+
+You will be billed only for the EC2 Instance and It depends on the EC2 instance size and how long you are running the application. Template provides an opporunity for the users to select the EC2 instance size, by default we have selected t2.small which costs ~$0.0232 per hour.  
+Please refer to the link for pricing - https://aws.amazon.com/ec2/instance-types/t2/.
 
 ## FAQ's . 
   
