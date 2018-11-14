@@ -17,7 +17,7 @@
 
 ## What is setup behind the scenes for you?
 
-Note that a default VPC and Subnet is established for you. The Blockchain and the Admin App run in the EC2 instance set up for you.
+Note that a default VPC and Subnet will be established for you. The Blockchain and the Admin App run in the EC2 instance set up for you.
 
 <img src="https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg" width="750" height="450" />
 
