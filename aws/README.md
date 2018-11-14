@@ -8,7 +8,7 @@ ObjectFrontier Smart Contract Accelerator is a click button Blockchain solution 
 - View each block in the chain
 - OFS Blockchain provisions a default master account and preloads private tokens to get you started with developing your blockchain applications and smart contracts.
 
-After you intall. Launch the app, login to admin interface using the creds admin/admin.
+After you install. Launch the app, login to admin interface using the creds admin/admin.
 
 ## Pre-requisite for the AWS deployment
 - Active AWS account .  
