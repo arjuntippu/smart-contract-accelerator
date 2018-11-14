@@ -2,16 +2,17 @@
 
 ## Pre-requisite for the AWS deployment
 - Active AWS account .  
-    - Link to create account - <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/">Click here</a> 
+    - Link to create account - <a href="https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/" target="_blank">Click here</a> 
 - Key pair if you want to SSH to EC2 Instance . 
-    - Link to create Key pair - <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html"> Click here</a>
+    - Link to create Key pair - <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank"> Click here</a>
     
 ## One click deployment AWS Buttons
 
 | Buttons    | Descripition | Step by step guide | 
 | ------------- | ------------- |------------- |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/ecs-cfn-templates-101/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2  | <a href="https://s3.amazonaws.com/ecs-cfn-templates-101/Smartcontract-Accelerator+deployment+guide.pdf"> Click here</a> |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/ecs-cfn-templates-101/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2  | <a href="https://s3.amazonaws.com/ecs-cfn-templates-101/Smartcontract-Accelerator+deployment+guide.pdf"> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/ecs-cfn-templates-101/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2  | <a href="https://s3.amazonaws.com/ecs-cfn-templates-101/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/ecs-cfn-templates-101/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2  | <a href="https://s3.amazonaws.com/ecs-cfn-templates-101/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
+
 
 
 ## How the application looks in AWS?
