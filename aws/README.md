@@ -51,8 +51,9 @@ Please refer to the link for pricing - https://aws.amazon.com/ec2/instance-types
 Yes, application can be deleted either by deleting the stack in the cloudformation stack or by terminating the EC2 instance. Preferred approach is to delete from the cloudformation, as it will delete even the security group.  
 Steps to delete the cloudformation stack - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html . 
 
-- Will the application remain intact in case of any EC2 restart? 
-Application data/assets will still continue to be on the EC2 as it's root device is backed by EBS. You need to start the application manually. Follow the below steps, to start the application:
+- Will the application remain intact in case of any EC2 restart?  
+Application data/assets will still continue to be on the EC2 as it's root device is backed by EBS. You need to start the application manually.   
+Follow the below steps, to start the application:
     1. Login to EC2 box (ssh ec2-user@ec2.dnsname -i path_to_pem_file)
     2. export dnsname=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname)  # to fetch the dnsname
     3. docker run -p 8090:8090 -e BLOCKCHAIN_SERVICE_URL=http://$dnsname:8090/blockchain -e PORT=8090 ganeshramr/ofs_smartcontract_accelerator:avenger
