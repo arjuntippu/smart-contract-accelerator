@@ -20,7 +20,6 @@ After you install. Launch the app, login to admin interface using the creds admi
 
 | Buttons    | Description | Step by step guide | 
 |:---:|:---|:---:|
-| ------------- | ------------- |------------- |
 | <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2<br>  (non-technical audience)  | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
 | <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2<br>  (technical audience) | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
 
