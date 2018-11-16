@@ -18,10 +18,10 @@ After you install. Launch the app, login to admin interface using the creds admi
     
 ## One click deployment AWS Buttons
 
-| Buttons    | Descripition | Step by step guide | 
+| Buttons    | Description | Step by step guide | 
 | ------------- | ------------- |------------- |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2  (non-technical audience)  | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2  (technical audience) | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2<br>  (non-technical audience)  | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2<br>  (technical audience) | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
 
 
 
@@ -54,9 +54,9 @@ Steps to delete the cloudformation stack - https://docs.aws.amazon.com/AWSCloudF
 - Will the application remain intact in case of any EC2 restart?  
 Application data/assets will still continue to be on the EC2 as it's root device is backed by EBS. You need to start the application manually.   
 Follow the below steps, to start the application:
-    1. Login to EC2 box (ssh ec2-user@ec2.dnsname -i path_to_pem_file)
-    2. export dnsname=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname)  # to fetch the dnsname
-    3. docker run -p 8090:8090 -e BLOCKCHAIN_SERVICE_URL=http://$dnsname:8090/blockchain -e PORT=8090 ganeshramr/ofs_smartcontract_accelerator:avenger
+    1. Login to EC2 box  `ssh ec2-user@ec2.dnsname -i path_to_pem_file`
+    2. Fetch the DNS name  `export dnsname=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname)`
+    3. Start the application  `docker run -p 8090:8090 -e BLOCKCHAIN_SERVICE_URL=http://$dnsname:8090/blockchain -e PORT=8090 ganeshramr/ofs_smartcontract_accelerator:avenger`
 
 
 ## Licence    
