@@ -20,14 +20,14 @@ After you install. Launch the app, login to admin interface using the creds admi
 
 | Buttons    | Descripition | Step by step guide | 
 | ------------- | ------------- |------------- |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/ecs-cfn-templates-101/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2 (non-technical audience)  | <a href="https://s3.amazonaws.com/ecs-cfn-templates-101/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
-| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/ecs-cfn-templates-101/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2 (for non-technical audience) | <a href="https://s3.amazonaws.com/ecs-cfn-templates-101/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator without SSH access to EC2 (non-technical audience)  | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
+| <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=BCAccelerator&amp;templateURL=https://s3.amazonaws.com/bcacclerator-deployment/oneclickdeployment-ssh.json" target="_blank"><span class="inlinemediaobject"><img alt="Launch Stack" src="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png"></a>  | Deploy smart contact accelerator with SSH access to EC2 (for non-technical audience) | <a href="https://s3.amazonaws.com/bcacclerator-deployment/Smartcontract-Accelerator+deployment+guide.pdf" target="_blank"> Click here</a> |
 
 
 
-## What is setup behind the scenes for you?
+## What is the setup behind the scenes for you?
 
-Note that a default VPC and Subnet will be established for you. The Blockchain and the Admin App run in the EC2 instance set up for you.
+Note that a default VPC, Subnet will be used to spin an EC2 instance. The Blockchain and the Admin App run in the EC2 instance set up for you.
 
 <img src="https://github.com/objectfrontiergit/smart-contract-accelerator/blob/master/aws/images/AWS.svg" width="750" height="450" />
 
@@ -38,7 +38,7 @@ The accelerator is free of cost.
 You will be billed only for the EC2 Instance and It depends on the EC2 instance size and how long you are running the application. Template provides an opporunity for the users to select the EC2 instance size, by default we have selected t2.small which costs ~$0.0232 per hour.  
 Please refer to the link for pricing - https://aws.amazon.com/ec2/instance-types/t2/.
 
-## FAQ's . 
+## FAQ's  
   
 - What AWS services are used in the application?  
 Cloudformation, EC2 and Security group. It uses the default VPC to create the EC2 Instance . 
@@ -51,7 +51,14 @@ Please refer to the link for pricing - https://aws.amazon.com/ec2/instance-types
 Yes, application can be deleted either by deleting the stack in the cloudformation stack or by terminating the EC2 instance. Preferred approach is to delete from the cloudformation, as it will delete even the security group.  
 Steps to delete the cloudformation stack - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html . 
 
-## Licence . 
+- Will the application remain intact in case of any EC2 restart? 
+Application data/assets will still continue to be on the EC2 as it's root device is backed by EBS. You need to start the application manually. Follow the below steps, to start the application:
+    1. Login to EC2 box (ssh ec2-user@ec2.dnsname -i path_to_pem_file)
+    2. export dnsname=$(curl -s http://169.254.169.254/latest/meta-data/public-hostname)  # to fetch the dnsname
+    3. docker run -p 8090:8090 -e BLOCKCHAIN_SERVICE_URL=http://$dnsname:8090/blockchain -e PORT=8090 ganeshramr/ofs_smartcontract_accelerator:avenger
+
+
+## Licence    
 
 See [LICENSE](LICENSE) 
 

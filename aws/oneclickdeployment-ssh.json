@@ -163,7 +163,21 @@
           "CidrIp" : "0.0.0.0/0"
         } ]
       }
-    }
+    },
+    "IPAddress": {
+            "Type": "AWS::EC2::EIP"
+        },
+        "IPAssoc": {
+            "Type": "AWS::EC2::EIPAssociation",
+            "Properties": {
+                "InstanceId": {
+                    "Ref": "EC2Instance"
+                },
+                "EIP": {
+                    "Ref": "IPAddress"
+                }
+            }
+        }
   },
 
   "Outputs" : {
